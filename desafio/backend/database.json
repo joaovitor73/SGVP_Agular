@@ -1,0 +1,54 @@
+{
+  "produtos": [
+    {
+      "nome": "Produto C",
+      "categoria": "Acessórios",
+      "preco": 0,
+      "quantidade": 5,
+      "fornecedor": "2",
+      "id": "3"
+    },
+    {
+      "id": "c8af",
+      "nome": "Manjericao",
+      "categoria": "Fruta",
+      "preco": 30,
+      "quantidade": 1,
+      "fornecedor": "2"
+    },
+    {
+      "id": "6c90",
+      "nome": "Barrinha",
+      "categoria": "cereal",
+      "preco": 20,
+      "quantidade": 1,
+      "fornecedor": "3"
+    },
+    {
+      "nome": "Barrinha",
+      "categoria": "cereal",
+      "preco": 20,
+      "quantidade": 0,
+      "fornecedor": "3",
+      "id": "8f12"
+    }
+  ],
+  "empresas": [
+    {
+      "id": "2",
+      "nome": "Empresa Y"
+    },
+    {
+      "id": "3",
+      "nome": "Empresa Z"
+    },
+    {
+      "id": "4",
+      "nome": "Empresa G"
+    },
+    {
+      "id": "c5ea",
+      "nome": "Empresa K"
+    }
+  ]
+}

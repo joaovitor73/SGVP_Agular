@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="container mt-4">
+  <div class="report-container p-4 border rounded">
+
+    <h5 class="mb-3">Categorias e Quantidades Totais de Produtos</h5>
+    <div class="table-responsive mb-5">
+      @if(categorias.length === 0) {
+        <p>Nenhum produto cadastrado.</p>
+      } @else {
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let element of categorias">
+            <td>{{ element.categoria }}</td>
+            <td>{{ element.quantidade }}</td>
+          </tr>
+        </tbody>
+      </table>
+    }
+    </div>
+
+    <h5 class="mb-3">Produtos Faltando em Estoque</h5>
+    <div class="table-responsive mb-5">
+      @if(produtosFaltando.length === 0) {
+        <p>Nenhum produto faltando em estoque.</p>
+      } @else {
+        <table class="table table-bordered table-hover">
+          <thead class="thead-warning">
+            <tr>
+              <th>Produto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let element of produtosFaltando">
+              <td>{{ element.nome }}</td>
+            </tr>
+          </tbody>
+        </table>
+      }
+    </div>
+
+    <h5 class="mb-3">Fornecedores com Produtos Faltando</h5>
+    <div class="table-responsive mb-5">
+      @if(fornecedoresFaltando.length === 0) {
+        <p>Nenhum fornecedor com produtos faltando.</p>
+      } @else {
+        <table class="table table-bordered table-hover">
+          <thead class="thead-danger">
+            <tr>
+              <th>Fornecedor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let element of fornecedoresFaltando">
+              <td>{{ element }}</td>
+            </tr>
+          </tbody>
+        </table>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #007bff; // Azul primário do Bootstrap
+}
+
+.navbar-nav .nav-link {
+  &:hover {
+    color: #ffc107; // Cor de hover (amarelo)
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff; // Branco para o nome da aplicação
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; // Branco para os links do menu
+}

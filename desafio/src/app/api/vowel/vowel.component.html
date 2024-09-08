@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h3>Encontre a Vogal</h3>
+      <form (ngSubmit)="findVowel()">
+        <div class="mb-3">
+          <label for="inputString" class="form-label">String</label>
+          <input id="inputString" type="text" class="form-control" [(ngModel)]="inputString" name="inputString" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Encontrar Vogal</button>
+      </form>
+
+      <div *ngIf="result" class="mt-4">
+        <h4>Resultado</h4>
+        <p><strong>String:</strong> {{ result.string }}</p>
+        <p><strong>Vogal:</strong> {{ result.vogal }}</p>
+        <p><strong>Tempo Total:</strong> {{ result.tempoTotal }}</p>
+      </div>
+    </div>
+  </div>
+</div>
